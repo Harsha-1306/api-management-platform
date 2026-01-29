@@ -31,61 +31,9 @@ A production-ready RESTful API service built with FastAPI for managing internal 
 ## Project Structure
 
 ```
-api-management-platform/
-├── app/
-│   ├── __init__.py
-│   ├── main.py              # FastAPI application entry point
-│   ├── config.py            # Configuration management
-│   ├── database.py          # Database connection setup
-│   ├── models/              # SQLAlchemy models
-│   │   ├── __init__.py
-│   │   ├── user.py
-│   │   ├── api_key.py
-│   │   └── configuration.py
-│   ├── schemas/             # Pydantic schemas
-│   │   ├── __init__.py
-│   │   ├── user.py
-│   │   ├── auth.py
-│   │   └── api_key.py
-│   ├── routers/             # API route handlers
-│   │   ├── __init__.py
-│   │   ├── auth.py
-│   │   ├── users.py
-│   │   ├── api_keys.py
-│   │   └── configurations.py
-│   ├── services/            # Business logic
-│   │   ├── __init__.py
-│   │   ├── auth_service.py
-│   │   └── api_key_service.py
-│   └── utils/               # Utility functions
-│       ├── __init__.py
-│       ├── security.py
-│       └── rate_limiter.py
-├── alembic/                 # Database migrations
-├── tests/                   # Test suite
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-└── README.md
-```
+       
 
-## Quick Start
-
-### Prerequisites
-
-- Python 3.11+
-- PostgreSQL 15+
-- Docker & Docker Compose (optional)
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/harsharamisetty/api-management-platform.git
-   cd api-management-platform
-   ```
-
-2. **Create virtual environment**
+1. **Create virtual environment**
    ```bash
    python -m venv venv
    source venv/bin/activate  # Linux/Mac
@@ -93,23 +41,23 @@ api-management-platform/
    .\venv\Scripts\activate  # Windows
    ```
 
-3. **Install dependencies**
+2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables**
+3. **Set up environment variables**
    ```bash
    cp .env.example .env
    # Edit .env with your configuration
    ```
 
-5. **Run database migrations**
+4. **Run database migrations**
    ```bash
    alembic upgrade head
    ```
 
-6. **Start the server**
+5. **Start the server**
    ```bash
    uvicorn app.main:app --reload --port 8000
    ```
