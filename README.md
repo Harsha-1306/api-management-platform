@@ -19,15 +19,17 @@ A production-ready RESTful API service built with FastAPI for managing internal 
 - **Rate Limiting** - Protect endpoints from abuse with configurable rate limits
 - **Comprehensive Logging** - Structured logging for debugging and monitoring
 - **OpenAPI Documentation** - Auto-generated Swagger/ReDoc documentation
+- **TypeScript** - Enhanced TypeScript utility modules for request validation and response transformation, reducing runtime errors across the API layer.
+- **Jenkins** - Improve a Jenkins pipeline so deployments happen automatically after tests pass
 
 ## Tech Stack
 
-- **Backend**: Python 3.11+, FastAPI
+- **Backend**: Python 3.11+, FastAPI, TypeScript
 - **Database**: PostgreSQL 15+
 - **Authentication**: JWT (PyJWT), bcrypt
 - **ORM**: SQLAlchemy 2.0
 - **Migrations**: Alembic
-- **Containerization**: Docker, Docker Compose
+- **Containerization**: Docker, Docker Compose, Jenkins
 - **Testing**: pytest, pytest-asyncio
 
 ## Project Structure
