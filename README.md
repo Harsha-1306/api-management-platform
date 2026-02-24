@@ -7,6 +7,8 @@ A production-ready RESTful API service built with FastAPI for managing internal 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue.svg)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+TypeScript
+Jenkins
 
 ## Features
 
